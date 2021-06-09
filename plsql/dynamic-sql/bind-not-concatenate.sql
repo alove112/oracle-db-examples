@@ -20,6 +20,7 @@ CREATE OR REPLACE PROCEDURE updnumval (
  , val_in     IN   NUMBER 
 ) 
 IS 
+--
    c_format CONSTANT VARCHAR2 ( 100 ) := 'YYYYMMDDHH24MISS'; 
 BEGIN 
    EXECUTE IMMEDIATE    'UPDATE employees SET ' 
